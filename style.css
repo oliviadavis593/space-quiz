@@ -1,0 +1,271 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Bebas Neue', cursive;
+    background: url(images/space-background.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/*============================*/
+    /*Reusable Code*/
+/*============================*/
+#quizBox {
+    border: 1px solid #fff; 
+    background-color: #821212;
+    width: 300px; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+}
+
+.submitButton,
+.nextButton,
+.startButton,
+.restartButton {
+    display: block; 
+    margin: 40px auto; 
+    background-color: red;
+    font-weight: bold;
+    font-size: 15px; 
+    border-radius: 5px;
+    color: #fff; 
+    border: 0.1em #fff solid;
+    width: 150px; 
+    height: 3em;
+}
+
+
+
+/*============================*/
+    /*Header Section (logo)*/
+/*============================*/
+
+.logo {
+    width: 150px; 
+    height: 150px; 
+    display: block; 
+    margin: 0 auto; 
+}
+
+/*===================================*/
+    /*Score and Question Section*/
+/*===================================*/
+
+#results-section {
+    color: #fff; 
+    font-size: 20px; 
+}
+
+#results-section ul {
+    display: flex;
+    flex-direction: row;
+}
+
+#results-section ul li {
+    list-style: none;
+    
+}
+
+.sizeMe {
+    display: block; 
+    margin: 0 auto;  
+}
+
+/*============================*/
+    /*Space Intro */
+/*============================*/
+
+.spaceIntro {
+    color: #fff; 
+}
+
+.spaceIntro h1 {
+    font-size: 20px; 
+    display: block; 
+    margin-left: 25px; 
+}
+
+.spaceIntro img {
+    width: 250px; 
+    height: 250px; 
+    display: block; 
+    margin: 0 auto; 
+    border: 1px solid #fff; 
+}
+
+
+
+/*Hover effects*/
+.startButton:hover, 
+.startButton:active {
+    background-color: #731010;
+    border: 0.1em solid #fff;
+}
+
+/*============================*/
+    /*Question Section */
+/*============================*/
+
+.questionBox {
+   height: 350px; 
+}
+
+fieldset {
+    border: none; 
+}
+
+.questionText {
+    margin: 0 auto; 
+    font-size: 20px; 
+    padding-top: 20px; 
+}
+
+.input-container {
+    display: flex; 
+    flex-direction: row;
+    margin-top: 20px; 
+}
+
+/*Hover effects*/
+.submitButton:hover, 
+.submitButton:active {
+    background-color: #731010;
+    border: 0.1em solid #fff;
+}
+
+
+/*============================*/
+    /*Response Section */
+/*============================*/
+
+.response {
+    width: 300px; 
+    height: auto;
+}
+
+.response img{
+    width: 250px; 
+    height: 250px; 
+    display: block; 
+    margin: 30px auto; 
+    border: 1px solid #fff; 
+}
+
+.incorrect-response {
+    padding-left: 40px; 
+    font-size: 18px; 
+}
+
+/*Hover effects*/
+.nextButton:hover, 
+.nextButton:active {
+    background-color: #731010;
+    border: 0.1em solid #fff;
+}
+/*============================*/
+    /*Final Section */
+/*============================*/
+
+.result-feedback {
+    padding-left: 35px; 
+    font-size: 20px; 
+}
+
+.final img {
+    width: 250px; 
+    height: 250px; 
+    display: block; 
+    margin: 0 auto; 
+    border: 1px solid #fff; 
+}
+
+.final-score {
+   padding-left: 75px; 
+    font-size: 18px; 
+}
+
+/*Hover effects*/
+.restartButton:hover, 
+.restartButton:active {
+    background-color: #731010;
+    border: 0.1em solid #fff;
+}
+
+
+
+/*============================*/
+    /*Media Queries==========*/
+/*============================*/
+
+@media only screen and (min-width: 720px) {
+    /*Logo Section*/
+    .logo {
+        width: 200px; 
+        height: 200px; 
+    }
+    /*Container*/
+    #quizBox {
+        width: 510px; 
+    }
+
+    .spaceIntro h1{
+        font-size: 35px; 
+        margin-left: 45px; 
+    }
+
+    .spaceIntro img {
+        width: 300px; 
+        height: 300px; 
+    }
+    /*Results Section*/
+    #results-section {
+        font-size: 35px
+    }
+
+    /*Question Section*/
+    .questionText {
+        font-size: 30px; 
+    }
+    .input-container {
+        font-size: 20px;  
+    }
+
+    .questionBox {
+        height: 400px; 
+    }
+    /*Response Section*/
+    .response {
+        margin: 60px auto;
+    }
+
+    .response img {
+        width: 300px; 
+        height: 300px;  
+    }
+
+    .incorrect-response { 
+        font-size: 20px; 
+    }
+
+    /*Final Section*/
+    .result-feedback {
+        padding-left: 90px; 
+        font-size: 30px; 
+    }
+    
+    .final img {
+        width: 300px; 
+        height: 300px; 
+    }
+
+    .final-score {
+        padding-left: 200px; 
+        font-size: 25px; 
+    }
+
+}
